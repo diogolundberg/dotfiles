@@ -18,9 +18,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 sudo apt -y install curl
 sudo apt -y install git
+sudo apt -y install build-essential
+sudo apt -y install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git $HOME/.pyenv/plugins/pyenv-virtualenvwrapper
 
 yes | cp -rf /data/.bashrc ~/.bashrc
 yes | cp -rf /data/.bash_aliases ~/.bash_aliases 
 . ~/.bashrc 
+pyenv install 3.7.3
