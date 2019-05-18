@@ -1,7 +1,6 @@
 [user]
     email = dclundberg@gmail.com
     name = Diogo Lundberg
-    signingkey = A86F1E3C4A5E9446
 [core]
     editor = vim
     excludesfile = ~/.gitignore
@@ -9,5 +8,3 @@
     default = simple
 [alias]
     amend = commit -a --amend --reuse-message=HEAD
-[commit]
-    gpgsign = true
