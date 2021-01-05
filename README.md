@@ -16,7 +16,7 @@ Find here hard links to my linux environment configuration files
 
 ## Isolating python tools using pyenv
 ```
-pyenv install 3.6.5
+pyenv install 3.9.0
 pyenv install 2.7.15
 
 pyenv virtualenv 3.6.5 azure
@@ -24,16 +24,16 @@ pyenv activate azure
 pip install azure-cli
 pyenv deactivate
 
-pyenv virtualenv 3.6.5 aws
+pyenv virtualenv 3.9.0 aws
 pyenv activate aws
 pip install awscli awscli s3cmd
 pyenv deactivate
 
-pyenv virtualenv 3.6.5 dev-tools
+pyenv virtualenv 3.9.0 dev-tools
 pyenv activate dev-tools
 pip install thefuck
 pyenv deactivate
 
-pyenv global 3.6.5 dev-tools aws azure
+pyenv global 3.9.0 dev-tools aws azure
 pyenv rehash
 ```
